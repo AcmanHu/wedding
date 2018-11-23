@@ -1,0 +1,284 @@
+* {
+	cursor: pointer;
+}
+
+body {
+	background: #f4f4f4;
+}
+
+input {
+	line-height: normal !important;
+}
+
+#screenConent {
+	width: 80%;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 3em;
+}
+
+.screenheader {
+	width: 100%;
+	height: auto;
+	position: relative;
+	background: #ffffff;
+	margin-top: 2em;
+}
+
+.screentype {
+	width: 100%;
+	height: auto;
+}
+
+.screenprice {
+	width: 100%;
+	height: auto;
+	line-height: 4em;
+}
+
+.screenenvironment {
+	width: 100%;
+	height: auto;
+}
+
+.screenmore {
+	width: 100%;
+	height: auto;
+}
+
+.screenmore p {
+	line-height: 3em;
+	text-align: center;
+	cursor: pointer;
+	/*快速双击不会选中dom节点*/
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	color: #979797;
+}
+
+.screenrow {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	border-bottom: 1px dashed #eaeaea;
+}
+
+.screenname {
+	margin: 0;
+	padding: 0;
+	line-height: 4em;
+}
+
+.allscreen {
+	margin: 0;
+	padding: 0;
+	line-height: 4em;
+}
+
+.screenserach {
+	height: 2em;
+	line-height: 2em;
+	margin-top: 1em;
+}
+
+.screenserach .b-form .b-submit {
+	border: none;
+	background: none;
+	outline: none;
+	border: 1px solid #a9a9a9;
+	color: #a9a9a9;
+}
+
+.screenserach input {
+	width: 56px;
+	height: 24px;
+}
+
+.aaa {
+	margin-right: 1.5em;
+	color: #585858;
+	cursor: pointer;
+	/*快速双击不会选中dom节点*/
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+}
+
+.screendetail {
+	width: 100%;
+	height: 3em;
+	line-height: 3em;
+	margin-top: 2em;
+}
+
+.screendetail span {
+	margin-right: 1.5em;
+	/*快速双击不会选中dom节点*/
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+}
+
+.a-screen {
+	width: 100%;
+	height: auto;
+}
+
+.a-message {
+	height: auto;
+}
+
+.a-allmsg {
+	width: 100%;
+	height: auto;
+	margin-left: .5em;
+}
+
+.a-name {
+	width: 100%;
+	line-height: 2em;
+	font-size: 1.2em;
+	color: #333333;
+}
+
+.a-name span {
+	float: right;
+	padding-right: .5em;
+	color: #4ecddf;
+}
+
+.a-designer {
+	width: 100%;
+	line-height: 2em;
+	font-size: .9em;
+	color: #585858;
+}
+
+.a-designer span {
+	float: right;
+	margin-right: .6em;
+}
+
+.a-address {
+	line-height: 2em;
+	color: #585858;
+}
+
+.a-address img {
+	padding-right: .5em;
+}
+
+.a-paging {
+	width: 100%;
+	height: auto;
+	margin-top: 2em;
+}
+
+.a-paging div {
+	right: 0;
+}
+
+.b-screen {
+	margin-top: 7em;
+	margin-bottom: 5em;
+}
+
+.b-recommend {
+	margin-bottom: 1em;
+	font-size: .9em;
+}
+
+#a-foot {
+	width: 100%;
+	height: auto;
+	margin-top: 3em;
+	background-color: white;
+}
+
+.b-foot {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 1em;
+}
+
+.b-foot1 {
+	width: 100%;
+	height: auto;
+	border-bottom: 1px dashed #e9e9bf;
+}
+
+.b-foot2 {
+	width: 100%;
+	height: auto;
+}
+
+.b-fc {
+	padding: 0;
+	margin: 0;
+}
+
+.b-fco {
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.b-fco p {
+	font-weight: 600;
+}
+
+.b-fco ul {
+	margin-top: 1.5em;
+}
+
+.b-fco li {
+	margin-bottom: 1em;
+	color: #979797;
+}
+
+.b-fc1 {
+	padding: 0;
+	margin: 0;
+}
+
+.b-fc2 {}
+
+.b-fc3 {}
+
+.b-fc4 {}
+
+.b-fc5 {}
+
+.b-fc5 div {
+	float: right;
+}
+
+.b-fc5 p {
+	font-weight: normal;
+	color: #979797;
+	font-size: .9em;
+}
+
+.b-fc5 span {
+	display: block;
+	margin-top: 1em;
+	color: #979797;
+}
+
+.b-fcl1 {
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+	margin-bottom: .8em;
+}
+
+.b-fcl1 p {
+	margin-top: .5em;
+}
+
+.b-fcl1 span {
+	font-size: .9em;
+	margin-right: 2em;
+}

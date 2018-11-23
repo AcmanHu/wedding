@@ -1,0 +1,403 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CaseMsg</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--<link rel="icon" type="image/png" href="img/favicon.png">-->
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- all css here -->
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+        
+        <!-- animate css -->
+        <!--<link rel="stylesheet" href="css/animate.css">-->
+        <!-- jquery-ui.min css -->
+        <!--<link rel="stylesheet" href="css/jquery-ui.min.css">-->
+        <!-- meanmenu css -->
+        <!--<link rel="stylesheet" href="css/meanmenu.min.css">-->
+        <!-- owl.carousel css -->
+        <!--<link rel="stylesheet" href="css/owl.carousel.css">-->
+        <!-- font-awesome css -->
+        <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->        
+        <!-- nivo-slider CSS
+        ============================================ -->          
+        <!--<link rel="stylesheet" href="inc/custom-slider/css/nivo-slider.css">-->
+        <!--<link rel="stylesheet" href="inc/custom-slider/css/preview.css">-->
+        <!-- jQuery Carousel Evolution -->
+        <!--<link rel="stylesheet" href="inc/3dslider/css/style.css">-->
+        <!-- style css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- responsive css -->
+        <!--<link rel="stylesheet" href="css/responsive.css">-->
+         <!--case-msg css-->
+        <link rel="stylesheet" href="css/case-msg.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <!-- modernizr css -->
+        <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+    </head>
+    <body class="single-services">
+        <!-- Header Area Start Here -->
+       <header style="box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);background: rgba(0,0,0,0.5);font-size: 18px;">
+           <div class="header-area" style="position: relative;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="logo-area">
+                                <a href="index.html"><img src="img/logo001.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="main-menu-area">
+                                <nav>
+                                    <ul id="nav">
+                                        <li><a href="index.html">首页</a></li> 
+                                        <li><a href="about.html">案例</a>
+                                        	<ul>
+                                                <li><a href="about.html">婚礼案例</a></li>
+                                                <li><a href="case-msg.html">婚纱摄影</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="team.html">团队</a>
+                                        	<ul>
+                                                <li><a href="team.html">化妆师</a></li>
+                                                <li><a href="team.html">主持人</a></li>
+                                                <li><a href="team.html">摄影师</a></li>
+                                                <li><a href="team.html">摄像师</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="flower.html">鲜花预定</a></li>                            
+                                        <li><a href="hotel.html">婚宴酒店</a></li>
+                                        
+                                        <li><a href="contact.html">联系我们</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs text-right">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mobile-menu">
+                      <nav id="dropdown">
+                        <ul>
+                            <li><a href="index.html">首页</a></li> 
+							<li><a href="about.html">案例</a></li>
+							<li><a href="services.html">服务</a>                                            
+								<ul>
+									<li><a href="single-services.html">个人服务</a></li>
+								</ul>
+							</li>                            
+							<li><a href="blog.html">博客</a></li>
+							<li><a href="team.html">团队</a></li>
+							<li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                      </nav>
+                    </div>          
+                  </div>
+                </div>
+              </div>
+            </div>
+        </header>
+        <!-- Header Area End Here -->
+      	<!--详细信息-->
+      	<div id="all-content">
+			<div class="d-topContent">
+				<div class="d-top1">
+					<ul>
+						<li style="margin-right: 20px;	float: left;">案例图片</li>
+						<li style="margin-right: 20px;	float: left;">猜你喜欢</li>
+						<li style="margin-right: 20px;">新人评价</li>
+					</ul>
+				</div>
+			</div>
+			<!--//content-->
+
+			<div id="d-content"  style="position: relative;">
+
+				<div class="d-botContent">
+					<div class="d-row d-leftContent">
+						<ul>
+							<li v-for="item in arr2"><img :src="item.img" /> </li>
+
+						</ul>
+						<div class="d-lookmore"><span>查看剩下的几张图</span></div>
+						<div class="d-guesslike">
+							<p>猜你喜欢</p>
+							<div id="carousel-example-generic" class="carousel slide mycarousel" data-ride="carousel">
+								<div class="carousel-inner" role="listbox">
+									<div class="item" v-for="(item,index) in arr1" :class="{active:index==nowIndex}">
+										<ul>
+											<li class="item1" v-for="val in item">
+												<img :src="val.img1" />
+												<div class="itemMsg">
+													<p class="itemP1">{{val.name}}<span>{{val.price}}</span></p>
+													<p class="itemP2">{{val.msg}}</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- Controls -->
+								<a style="background: none !important;" class="left carousel-control"  role="button" @click="changeReduceItem" data-slide="prev">
+									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a style="background: none !important;" class="right carousel-control"  role="button" @click="changeAddItem" data-slide="next">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--详情页面-->
+					<div class="d-row d-rightContent" >
+						<!--详情页标题-->
+						<h2 class="d-title">纯粹的爱上纯纯的你</h2>
+						<!--人物姓名-->
+						<p class="d-name">
+							<a href="#">策划师-Xx</a>
+						</p>
+						<p class="d-namespeak">为彼此的灵魂寻找一片静谧的栖息地，爱爱情如林间盛开的白玫，鲜活而纯净， 这里佳木葱茏、烛光点点、奶油香甜， 和你分享最原始的自由气息， 我们低吟着浪漫，诗与歌浸染了时光。</p>
+						<p class="d-time">
+							<span>时间：XXXX年XX月XX日-午宴</span>
+							<span class="d-spot">/</span>
+							<span>地点：重庆沙坪坝</span>
+						</p>
+						<!--布置费用-->
+						<p class="d-arrangement">
+							<span>布置费</span>
+							<span class="d-arrangementprice">￥20181</span>
+							<span class="d-pricedetail">报价明细</span>
+						</p>
+						<p class="d-weddingteam">婚礼团队<span class="d-packup">团队详情</span></p>
+						<!--策划师显示-->
+						<div class="d-teamperson">
+							<a href="#">
+								<img src="img/casemsg/man1.jpg" style="border-radius: 50%;" />
+							</a>
+							<a href="#">
+								<img src="img/casemsg/man1.jpg" style="border-radius: 50%;" />
+							</a>
+						</div>
+						<!--策划师详情-->
+						<div class="d-teampersondetail">
+							<ul>
+								<li>
+									<a href="#">
+										<img src="img/casemsg/man1.jpg" /> 策划师-XXXX
+									</a>
+									<span class="d-personprice">￥20181</span>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/casemsg/man1.jpg" /> 策划师-XXXX
+									</a>
+									<span class="d-personprice">￥20181</span>
+								</li>
+							</ul>
+						</div>
+						<!--婚礼咨询-->
+						<div class="d-wedding-consult">
+							<div class="d-consult-content">
+								<div class="d-consult-title">
+									<span>婚礼婚宴咨询</span>
+								</div>
+								<div class="d-consult-smalltitle">
+									<span>专业顾问一对一专业解答</span>
+								</div>
+								<div class="d-consult-name">
+									<input placeholder="姓名" />
+								</div>
+								<div class="d-consult-name">
+									<input placeholder="电话" />
+								</div>
+								<div class="d-consult-name d-consult-start">
+									<input type="button" value="立即预约" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+		</div>
+        <!-- Footer Area Start Here -->
+        <footer>
+        
+        </footer>
+        <!-- Footer Area End Here -->
+        <!-- all js here -->
+        <script type="text/javascript" src="js/vue1.js" ></script>
+        <!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+		<!--尾部组件-->
+		<script type="text/javascript" src="js/Footer2.js" ></script>
+        <!-- main js -->
+        <!--<script src="js/main.js"></script>-->
+		<script>
+			new Vue({
+				el: "#d-content",
+				data: {
+					list1: ['img/casemsg/theme.jpg', 'img/casemsg/theme.jpg', 'img/casemsg/theme.jpg', 'img/casemsg/theme.jpg'],
+					list2: ['img/casemsg/man1.jpg', 'img/casemsg/man1.jpg', 'img/casemsg/man1.jpg', 'img/casemsg/man1.jpg'],
+					nowIndex: 0,
+					arr1: [
+						[{
+								img1: 'img/casemsg/hotel.jpg',
+								name: '暖暖',
+								price: '￥8847',
+								msg: '这是一段很长很长很长很长很长很长很长很长很长很长很长很长的文字'
+							},
+							{
+								img1: 'img/casemsg/hotel1.jpg',
+								name: '暖暖',
+								price: '￥8847',
+								msg: '这是一段很长很长很长很长很长很长很长很长很长很长很长很长的文字'
+							},
+							{
+								img1: 'img/casemsg/hotel2.jpg',
+								name: '暖暖',
+								price: '￥8847',
+								msg: '这是一段很长很长很长很长很长很长很长很长很长很长很长很长的文字'
+							}
+						],
+						[{
+								img1: 'img/casemsg/hotel2.jpg',
+								name: '暖暖',
+								price: '￥8847',
+								msg: '这是一段很长很长很长很长很长很长很长很长很长很长很长很长的文字'
+							},
+							{
+								img1: 'img/casemsg/hotel.jpg',
+								name: '暖暖',
+								price: '￥8847',
+								msg: '这是一段很长很长很长很长很长很长很长很长很长很长很长很长的文字'
+							},
+							{
+								img1: 'img/casemsg/hotel2.jpg',
+								name: '暖暖',
+								price: '￥8847',
+								msg: '这是一段很长很长很长很长很长很长很长很长很长很长很长很长的文字'
+							}
+						],
+						[{
+								img1: 'img/casemsg/hotel1.jpg',
+								name: '暖暖',
+								price: '￥8847',
+								msg: '这是一段很长很长很长很长很长很长很长很长很长很长很长很长的文字'
+							},
+							{
+								img1: 'img/casemsg/hotel2.jpg',
+								name: '暖暖',
+								price: '￥8847',
+								msg: '这是一段很长很长很长很长很长很长很长很长很长很长很长很长的文字'
+							},
+							{
+								img1: 'img/casemsg/hotel.jpg',
+								name: '暖暖',
+								price: '￥8847',
+								msg: '这是一段很长很长很长很长很长很长很长很长很长很长很长很长的文字'
+							}
+						],
+					],
+					arr2: [
+						{
+							img: 'img/casemsg/casemsg1.jpg'
+						},
+						{
+							img: 'img/casemsg/casemsg2.jpg'
+						},
+						{
+							img: 'img/casemsg/casemsg3.jpg'
+						},
+					],
+				},
+				methods: {
+					changeAddItem() {
+						this.nowIndex++;
+						if(this.nowIndex == 3) this.nowIndex = 0;
+					},
+					changeReduceItem() {
+						this.nowIndex--;
+						if(this.nowIndex == -1) this.nowIndex = 2;
+					}
+				}
+			})
+			$(function() {
+				showMsg();
+				showPerson();
+
+				//查看全文和收起功能
+				function showMsg() {
+					var Otext = $('.d-namespeak').text();
+					var maxLength = 55;
+					var maxWords = $('.d-namespeak').text().substring(0, maxLength);
+					if(Otext.length >= maxLength) {
+						$('.d-namespeak').html('<span class="p-showmsg">' + maxWords + '...' + '</span>' + '<span class="d-showmsg">全文</span>');
+						$('.d-showmsg').click(function() {
+							if($('.d-showmsg').text() === '全文') {
+								$('.p-showmsg').html(Otext);
+								$('.d-showmsg').html('收起');
+							} else {
+								$('.p-showmsg').html(maxWords + '...');
+								$('.d-showmsg').html('全文');
+							}
+						})
+					} else {
+						$('.d-namespeak').html(Otext);
+					}
+				}
+
+				//人物的详细信息
+				function showPerson() {
+					$('.d-weddingteam .d-packup').click(function() {
+
+						if($(this).text() == '团队详情') {
+							$('.d-teamperson').css('display', 'none');
+							$(this).text('收起')
+							$('.d-teampersondetail').slideDown("slow");
+						} else {
+							$('.d-teamperson').show();
+							$(this).text('团队详情')
+							$('.d-teampersondetail').css('display', 'none');
+						}
+					})
+				}
+//style="position: absolute; right: 0;top: 0;"
+				var top1 = $('.d-topContent').offset().top;
+				$(window).scroll(function() {
+					
+					var win_top = $(this).scrollTop();
+					
+					var top = $('.d-topContent').offset().top;
+					if(win_top >= top) {　
+						var win_top1 = $(this).scrollTop();　　　　
+						$(".d-topContent").addClass("sfixed");
+						// 						$(".d-rightContent").addClass("sfixed1");	
+//						$('.d-rightContent').css({"position":"absolute","top":win_top1-40,"right":0})　　　　　　
+					}
+
+					if(win_top < top1) {　　　　　　　　
+						$(".d-topContent").removeClass("sfixed");
+						//						$(".d-rightContent").removeClass("sfixed1");	
+//						$('.d-rightContent').css({"position":"absolute","top":0,"right":0})　　　　　　
+					}
+				})
+
+			})
+		</script>
+    </body>
+</html>
+

@@ -1,0 +1,560 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="renderer" content="webkit" />
+		<meta name="force-rendering" content="webkit" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+		<!--<script>
+			/*@cc_on window.location.href="http://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); @*/
+		</script>-->
+
+		<!--<meta http-equiv="x-ua-compatible" content="ie=edge"><-->
+		</-->
+		<title>Home</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="icon" type="image/png" href="img/favicon.png">
+		<!-- Place favicon.ico in the root directory -->
+
+		<!-- all css here -->
+		<!-- bootstrap v3.3.6 css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- animate css -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- jquery-ui.min css -->
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<!-- meanmenu css -->
+		<link rel="stylesheet" href="css/meanmenu.min.css">
+		<!-- owl.carousel css -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- font-awesome css -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- nivo-slider CSS
+        ============================================ -->
+		<!--<link rel="stylesheet" href="css/common.css" /> />-->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="inc/custom-slider/css/nivo-slider.css">
+		<link rel="stylesheet" href="inc/custom-slider/css/preview.css">
+		<!-- jQuery Carousel Evolution -->
+		<link rel="stylesheet" href="inc/3dslider/css/style.css">
+		<!-- style css -->
+
+		<!--common.css-->
+		<!--<link rel="stylesheet" href="css/common.css" />-->
+		<!-- responsive css -->
+		
+		<link rel="stylesheet" href="css/footer.css" />
+		<!-- modernizr css -->
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script type="text/javascript" src="js/alipath.js" ></script>
+		
+	</head>
+	<style>
+		[v-cloak] {
+			display: none;
+		}
+	</style>
+
+	<body>
+		<!-- Header Area Start Here -->
+		<header>
+		</header>
+		<!-- Header Area End Here -->
+		<!-- slider area-->
+			<!--<div class="imgshadow" style="width: 100%;position: absolute;background: rgba(0,0,0,0.5);z-index: 9;"></div>-->
+		
+		<div class="slider-area">
+
+			<div class="bend niceties preview-2">
+				<div id="ensign-nivoslider" class="slides">
+					<img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/banner/banner1.jpg" alt="" title="#slider-direction-1" />
+					<img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/banner/banner2.jpg" alt="" title="#slider-direction-2" />
+					<img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/banner/banner3.jpg" alt="" title="#slider-direction-3" />
+				</div>
+				<!-- direction 1 -->
+				
+			</div>
+		</div>
+		<!-- slider end-->
+		<!-- Home Page Our Service Section Area Start Here -->
+		<div id="section-spacing" class="home-our-service-area section-spacing" v-cloak>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-md-12 col-sm-12 col-xs-12">
+						<div class="template-section-area">
+							<h2>婚礼案例 <a href="about.html">查看更多</a></h2>
+							<!--<p style="font-size: 18px;"> 婚礼上，当看到自己的新娘走出来的那一刻，这个新郎再也忍不住眼泪。他看向她的那画面太动人，他一定深深爱着她，在他心里，她就是世间最动人的美好吧！</p>-->
+							<ul>
+								<li v-for="(item,index) in list1" @click="changeMsg(index)" :class="{boderColor:index==nowIndex}">{{item}}</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="row a-anlimsg">
+					<div class="col-lg-4 col-md-md-4 col-sm-4 col-xs-12 item-img" v-for="(item,index) in arr1" @click="toMsg(index)">
+						<div class="total-single-service-area">
+							<!--<div class="single-services-area">动画</div>-->
+							<div class="a-anliimg">
+								<img :src="item.img" height="222px" />
+							</div>
+							<div style="margin-bottom: 15px;" class="a-price">￥{{item.price}}</div>
+							<div class="a-hotel">
+								<span>{{item.theme}}</span>
+								<span class="a-hotel-line">|</span>
+								<span class="a-hotel-detail">{{item.hotel}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Home Page Our Service Section Area End Here -->
+		<!-- Home Page About Section Area Start Here -->
+		<div class="home-portfolio-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-md-12 col-sm-12 col-xs-12">
+						<div class="template-section-area">
+							<h2>摄影作品</h2>
+							<p>
+								摄影作品，是通过摄影师或业余爱好者通过灵感，摄影技术等对自然、人物等客观事物进行描绘、供人欣赏的艺术作品。 摄影作品包括婚纱照作品、艺术照作品、儿童照作品、广告作品、孕妇照作品、全家福作品等。
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row main-portfolio-section">
+					<div class="col-lg-12 col-md-md-12 col-sm-12 col-xs-12">
+						<div id="dg-container" class="dg-container">
+							<div id="dg-wrapper" class="dg-wrapper">
+								<a href="#"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/photography/photo1.png" alt="加载中..."></a>
+								<a href="#"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/photography/photo2.png" alt="image02"></a>
+								<a href="#"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/photography/photo3.png" alt="image03"></a>
+								<a href="#"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/photography/photo4.png" alt="image04"></a>
+								<a href="#"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/photography/photo5.png" alt="image04"></a>
+								<a href="#"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/photography/photo6.png" alt="image04"></a>
+								<a href="#"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/photography/photo7.png" alt="image04"></a>
+								<a href="#"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/photography/photo8.png" alt="image04"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Home Page Portfolio Area End Here -->
+		<!-- Home Page Team Start Here -->
+		<div class="home-page-team-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-md-12 col-sm-12 col-xs-12">
+						<div class="template-section-area">
+							<h2>店铺活动</h2>
+							<p>主动挑错--打动老年顾客的心例:将有瑕疵的货品,主动写明瑕癌来出售,让顾客主动挑错,得到客户信任。方案20 "欢乐金婚"-即做广告又做见证人方案21 "寿星"效应--让寿星为店铺做广告第二节性别促销方案22英雄救美!--打好男性这张牌例:美国一家烟草店铺,橱窗中一位美女被香烟压着并向往来的男性求救,只要男士卖掉香烟美女就可以从困境中出来。</p>
+						</div>
+					</div>
+				</div>
+				<div id="total-team" class="row total-team">
+
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clearmargin">
+						<!--arr2-->
+						<div class="total-team-area">
+							<div class="single-team-area">
+								<a href="index.html"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/news/news2.jpg" alt=""></a>
+								<div class="details">
+									<a href="index.html">更多活动</a>
+								</div>
+							</div>
+						</div>
+						<div class="bottomtitle">
+							<span class="vertical-line"></span>
+							<span class="scene-name">2018莫奈花园系列主题</span>
+							<img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/slash.png" />
+							<span class="scene-tag">百年之后，致敬莫奈，重现古威尼斯世外梦境</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Home Page Team End Here -->
+		<!-- Home Page Store Start Here -->
+		<div class="home-page-store-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-md-12 col-sm-12 col-xs-12">
+						<div class="template-section-area" style="text-align: left;">
+							<h2>婚庆花艺</h2>
+							<p>婚礼花艺是婚礼上的装饰用花。要求具备4个特点，即花大、色艳、新鲜、寓意好。随着中国民众消费水平和审美的提高，大众对于婚宴中花艺的需求日趋旺盛，在一二线城市中，一场婚礼中花材的费用会占到总费用的三分之一，其中多项费用需要仔细考量</p>
+						</div>
+					</div>
+				</div>
+				<div class="home-page-total-store">
+					<div class="row">
+						<div class="col-lg-8 col-md-md-8 col-sm-8 col-xs-12">
+							<div class="home-shop-area">
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="active">
+										<a href="#home" aria-controls="home" role="tab" data-toggle="tab">样式</a>
+									</li>
+									<li>
+										<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">成品</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="home">
+										<div class="groom-area">
+											<div class="single-groom">
+												<a href="flower.html"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/flower/flower1.jpg" alt=""></a>
+												<div class="details">
+													<a href="flower.html">产看详情</a>
+												</div>
+											</div>
+											<div class="single-groom">
+												<a href="flower.html"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/flower/flower2.jpg" alt=""></a>
+												<div class="details">
+													<a href="single-team.html">查看详情</a>
+												</div>
+											</div>
+											<div class="single-groom">
+												<a href="flower.html"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/flower/flower3.jpg" alt=""></a>
+												<div class="details">
+													<a href="single-team.html">查看详情</a>
+												</div>
+											</div>
+											<div class="single-groom">
+												<a href="flower.html"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/flower/flower4.jpg" alt=""></a>
+												<div class="details">
+													<a href="single-team.html">查看详情</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="profile">
+										<div class="bride-area">
+											<div class="single-bride">
+												<a href="flower.html"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/flower/flower4.jpg" alt=""></a>
+												<div class="details">
+													<a href="single-team.html">查看详情</a>
+												</div>
+											</div>
+											<div class="single-bride">
+												<a href="flower.html"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/flower/flower3.jpg" alt=""></a>
+												<div class="details">
+													<a href="single-team.html">查看详情</a>
+												</div>
+											</div>
+											<div class="single-bride">
+												<a href="flower.html"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/flower/flower2.jpg" alt=""></a>
+												<div class="details">
+													<a href="single-team.html">查看详情</a>
+												</div>
+											</div>
+											<div class="single-bride">
+												<a href="flower.html"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/flower/flower1.jpg" alt=""></a>
+												<div class="details">
+													<a href="single-team.html">查看详情</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-md-4 col-sm-4 col-xs-12">
+							<div class="shop-advertise-area">
+								<a href="shop.html"><img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/flower/flowerall.jpg" style="height: 380px;" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Home Page Store End Here -->
+		<!-- Home Page Testimonial Area start Here -->
+		<!-- Home Page Testimonial Area End Here -->
+		<!-- Home Page Blog Start Here -->
+		<div class="home-page-latest-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-md-12 col-sm-12 col-xs-12">
+						<div class="template-section-area">
+							<h2>不一样的婚礼</h2>
+							<p> 来自世界各地不一样的婚礼........</p>
+						</div>
+					</div>
+				</div>
+				<div id="total-blog" class="total-blog-content-area" v-cloak>
+					<div class="row">
+
+						<div class="col-lg-4 col-md-md-4 col-sm-4 col-xs-12" v-for="item in arr3">
+							<div class="single-blog">
+								<a href="case-msg.html"><img :src="item.img" alt=""></a>
+								<div class="details">
+									<a href="case-msg.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+								</div>
+								<div class="date">
+									<ul>
+										<li>{{item.month}} <span> {{item.year}}</span></li>
+									</ul>
+								</div>
+								<h3><a href="single-blog.html">{{item.title}}</a></h3>
+								<p><span>{{item.looknum}}</span> 人已查看 </p>
+								<div class="blog-content">
+									<p>{{item.content}}</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="home-page-about-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="about-us-content">
+							<h2>公司 <span>简介</span></h2>
+							<p><span>公司简介：以爱为名，打造极致服务，留下永生感动。       我们是一支热情、细心、团结有活力的团队。为保障每场婚礼的质量我们坚持在每一个好日子最多只为两对新人服务。我们坚信只有用心把客户服务好、为客户创造价值才能体现我们的价值、才能得到客户的认可，您的满意是我们共同的追求。       亲爱的文化传媒以打造专属个性化创意求婚为目标，致力于为每一对求婚客户打造符合他们爱情故事的专属求婚，从每一个爱情故事中提取创意元素，让求婚更加浪漫、惊喜、感动。</span></p>
+							<p>公司经营范围：婚庆礼仪策划、文化活动策划；摄影摄像；婚庆用品租赁、销售；演出用品租赁；礼仪策划；企业管理咨询；经营电子商务；国内贸易，货物及技术进出口；从事广告业务。为知名艺人、创意专家做推广、代理；演出经纪；；</p>
+							<!--<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining esseSimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>-->
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="about-us-feature-image">
+							<img src="https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/about-feature.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Home Page Blog End Here -->
+		<!-- Footer Area Start Here -->
+		<div id="a-foot">
+			<div class="b-foot">
+				<div class="b-foot1">
+					<div class="row b-fc">
+						<div class="col-xs-2 b-fco b-fc1">
+							<p>注册指南</p>
+							<ul>
+								<li>新人注册</li>
+								<li>婚礼人注册</li>
+							</ul>
+						</div>
+						<div class="col-xs-2 b-fco b-fc2">
+							<p>在线预定</p>
+							<ul>
+								<li>预定流程</li>
+								<li>支付方式</li>
+								<li>异地费，交通费标准</li>
+							</ul>
+						</div>
+						<div class="col-xs-2 b-fco b-fc3">
+							<p>消费保障</p>
+							<ul>
+								<li>实名认证</li>
+								<li>定金担保</li>
+								<li>价格透明</li>
+							</ul>
+						</div>
+						<div class="col-xs-2 b-fco b-fc4">
+							<p>售后服务</p>
+							<ul>
+								<li>无忧退款</li>
+								<li>应服务</li>
+								<li>免费咨询</li>
+							</ul>
+						</div>
+						<div class="col-xs-4 b-fco b-fc5">
+							<div>
+								<p>客服热线</p>
+								<h3>4000-400-400</h3>
+								<span>周一至周日 8：00-22：00</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="b-foot2">
+					<div class="row b-fc">
+						<div class="col-xs-8 b-fcl1">
+							<span>关于找我</span>
+							<span>联系找我</span>
+							<span>加入找我</span>
+							<span>法律声明</span>
+							<span>保住中心</span>
+							<span>新手指导</span>
+							<span>快速定制</span>
+							<p>xxxxxxxxxx经营许可证：Xxx-xxxxxx</p>
+						</div>
+						<div class="col-xs-4 b-fc"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Area End Here -->
+		<!-- all js here -->
+		<!--vue.js-->
+		<script type="text/javascript" src="js/vue1.js"></script>
+		<!-- jquery latest version -->
+		<!--<script src="js/vendor/jquery-1.12.0.min.js"></script>-->
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<!-- bootstrap js -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- meanmenu js -->
+		<script src="js/jquery.meanmenu.js"></script>
+		<!-- jquery-ui js -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- wow js -->
+		<script src="js/wow.min.js"></script>
+		<!-- nivo slider js -->
+		<script src="inc/custom-slider/js/jquery.nivo.slider.js"></script>
+		<script src="inc/custom-slider/home.js"></script>
+		<!-- jQuery Carousel Evolution -->
+		<script type="text/javascript" src="inc/3dslider/js/jquery.gallery.js"></script>
+		<script type="text/wjavascript" src="inc/3dslider/js/modernizr.custom.53451.js"></script>
+		<!-- plugins js -->
+		<script src="js/plugins.js"></script>
+		<!--头部组件-->
+		<script type="text/javascript" src="js/Header.js"></script>
+		<!--尾部组件-->
+		<script type="text/javascript" src="js/Footer.js"></script>
+		<!-- main js -->
+		<script src="js/main.js"></script>
+
+		<script>
+			
+					new Vue({
+						el: '#section-spacing',
+						data: {
+							list1: ['森系 ', '西式', '户外', '韩式', '中式'],
+							nowIndex: 0,
+							arr1: [{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/anli/theme01.jpg',
+									price: '546464',
+									theme: '森系之迷雾森林',
+									hotel: '明月大酒店'
+								},
+								{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/anli/theme02.jpg',
+									price: '546464',
+									theme: '森系之迷雾森林',
+									hotel: '明月大酒店'
+								},
+								{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/anli/theme03.jpg',
+									price: '546464',
+									theme: '森系之迷雾森林',
+									hotel: '明月大酒店'
+								},
+								{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/anli/theme03.jpg',
+									price: '546464',
+									theme: '森系之迷雾森林',
+									hotel: '明月大酒店'
+								},
+								{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/anli/theme01.jpg',
+									price: '546464',
+									theme: '森系之迷雾森林',
+									hotel: '明月大酒店'
+								},
+								{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/anli/theme02.jpg',
+									price: '546464',
+									theme: '森系之迷雾森林',
+									hotel: '明月大酒店'
+								},
+							],
+						},
+						methods: {
+							changeMsg(index) {
+								this.nowIndex = index;
+							},
+							toMsg(index){
+								window.open('case-msg.html');
+							}
+						}
+					})
+					
+					
+					new Vue({
+						el: '#total-team',
+						data: {
+							arr2: [{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/activity/activity1.png',
+									//      					name:'XXX',
+									//      					job:'婚礼协调员'
+								},
+								{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/activity/activity2.png',
+									//      					name:'XXX',
+									//      					job:'婚礼设计师'
+								},
+								{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/activity/activity3.png',
+									//      					name:'XXX',
+									//      					job:'婚礼化妆师'
+								},
+							],
+						}
+					}) 
+					
+					
+					new Vue({
+						el: "#total-blog",
+						data: {
+							arr3: [{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/weddingnews/news1.jpg',
+									month: '01,Jul',
+									year: '2018',
+									title: '百对新人在长隆野生动物世界参加动物主题空中婚礼',
+									looknum: '55',
+									content: '7月1日，“情定长隆，爱在空中”-- 第二届长隆空中婚礼在长隆野生动物世界浪漫举行。延续去年全球最大空中集体婚礼的极致婚礼仪式感，今年长隆空中婚礼致力为有情人打造更个性化定制梦幻婚礼，来自全国各地的百对新人除了收获来自全球500多种、超两万只珍稀动物的祝福以外，还跟全球国宝动物亲密互动，拍下动物主题专属婚纱大片，更在独一无二的“婚车”--空中缆车上一边体验“与兽同行，与鸟齐飞”，一边享用星厨精心炮制的浪漫空中晚宴。'
+								},
+								{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/weddingnews/news2.jpg',
+									month: '01,Jul',
+									year: '2018',
+									title: '广州南沙越秀喜来登酒店推出四款专属婚宴套餐',
+									looknum: '22',
+									content: '广州南沙越秀喜来登酒店最新推出的四款婚宴套餐，可让在广州南沙举办婚礼的恋人，自由选择合用的婚宴套餐，尽享物超所值的服务，度过人生浪漫时刻。'
+								},
+								{
+									img: 'https://wedding1.oss-cn-shenzhen.aliyuncs.com/img/weddingnews/news3.jpg',
+									month: '01,Jul',
+									year: '2018',
+									title: '生希有心•骑士概念婚礼秀4月15日于海口鲁能希尔顿酒店精彩上演',
+									looknum: '33',
+									content: '春天可谓是一个万物复苏，百花争艳的季节，空气里似乎都弥漫着甜甜的恋爱的气息，提醒着我们这个充满爱的季节的到来。海南，中国最南边的热带岛屿，这里不仅有碧海蓝天、细浪白沙、椰风海韵，更有热带雨林、湿地公园，为你提供梦幻婚礼所需的一切完美场景。'
+								}
+							],
+						}
+					}) 
+					
+					$().ready(function() {
+						var bend = $(".bend");
+						var number = bend.find(".nivo-controlNav a"); //注意分号 和逗号的用法
+						var timer = null;
+						var sw = 0;
+						timer = setInterval(function() {
+							sw++;
+							if(sw == number.length) {
+								sw = 0
+							};
+							number.eq(sw).trigger("click");
+						}, 5000);
+					});
+					
+		</script>
+
+		
+	</body>
+
+</html>

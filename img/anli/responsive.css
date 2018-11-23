@@ -1,0 +1,294 @@
+/* Large Normal desktop :1170px. */
+@media (max-width: 1500px) {
+	.nivoSlider img {
+     height: auto !important; 
+	}
+.header-area .main-menu-area ul li a {padding: 38px 14px;}
+.header-area .logo-area {margin-top: 18px;}
+.slider-area .slider-1 h1, .slider-area .slider-2 h1 {font-size: 50px;line-height: 0;margin: 99px 0 38px;}
+.slider-area .slider-1 div.title2, .slider-area .slider-2 div.title2{padding: 0 10em;}
+.preview-2 .nivo-controlNav{bottom: 20px;}
+.slider-area .slider-2 div.read-more, .slider-area .slider-1 div.read-more{  margin-top: 40px;}
+.slider-area .slider-2 div.read-more a, .slider-area .slider-1 div.read-more a{padding: 13px 30px}
+.home-our-service-area .total-single-service-area {padding: 0;}
+.home-our-service-area .total-single-service-area .single-services-area p {padding: 0 5px;}
+.home-our-service-area .total-single-service-area .single-services-area {padding: 70px 0 !important;}
+.home-our-service-area .total-single-service-area .single-services-area:hover {padding: 15px 0;}
+.home-page-our-service .services-area .owl-pagination {  margin-top: 0;}
+.home-page-latest-blog .total-blog-content-area .single-blog .details {top: 20%;}
+.footer-top-area .single-footer ul li {font-size: 27px;}
+.footer-bottom-area .footer-bottom-left p {font-size: 12px;}
+.home2 .header-area {padding: 0;}
+.home2 .header-area .main-header-area {margin-top: 10px;}
+.our-service .single-service .media .media-body h4.media-heading a {font-size: 20px;}
+.home-page-team-area .total-team .total-team-area .single-team-area {  padding: 29px;}
+.contact-us .contact-page-content ul li {margin: 0 20px;}
+.page-header-area h1 {font-size: 40px;}
+.contact-us .main-contact-form h3 {font-size: 21px;}
+.slider-area .slider-1 p::after, .slider-area .slider-2 p::after{width: 44%;}
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+	.nivoSlider{height: auto;}
+	.nivoSlider img {
+     height: 480px !important; 
+}
+.header-area .main-menu-area ul li a {padding: 38px 14px;}
+.header-area .logo-area {margin-top: 18px;}
+.slider-area .slider-1 h1, .slider-area .slider-2 h1 {font-size: 50px;line-height: 0;margin: 100px 0 30px;}
+.slider-area .slider-1 div.title2, .slider-area .slider-2 div.title2{padding: 0;}
+.preview-2 .nivo-controlNav{bottom: 20px;}
+.slider-area .slider-2 div.read-more, .slider-area .slider-1 div.read-more{  margin-top: 40px;}
+.slider-area .slider-2 div.read-more a, .slider-area .slider-1 div.read-more a{padding: 13px 30px}
+.home-our-service-area .total-single-service-area {padding: 0;}
+.home-our-service-area .total-single-service-area .single-services-area p {padding: 0 5px;}
+.home-our-service-area .total-single-service-area .single-services-area, .home-our-service-area .total-single-service-area .single-services-area:hover {padding: 15px 0;}
+.home-page-our-service .services-area .owl-pagination {  margin-top: 0;}
+.home-page-latest-blog .total-blog-content-area .single-blog .details {top: 16%;}
+.footer-top-area .single-footer ul li {font-size: 27px;}
+.footer-bottom-area .footer-bottom-left p {font-size: 12px;}
+.home2 .header-area {padding: 0;}
+.home2 .header-area .main-header-area {margin-top: 10px;}
+.our-service .single-service .media .media-body h4.media-heading a {font-size: 20px;}
+.home-page-team-area .total-team .total-team-area .single-team-area{padding: 0;}
+.contact-us .contact-page-content ul li {margin: 0 20px;}
+.page-header-area h1 {font-size: 40px;}
+.contact-us .main-contact-form h3 {font-size: 21px;}
+.slider-area .slider-1 p::after, .slider-area .slider-2 p::after{width: 52%;}
+.home-page-banner-area h1 {font-size: 57px;}
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.nivoSlider{height: auto;} 
+.header-area .main-menu-area ul li a {padding: 38px 14px;}
+.header-area .logo-area {margin-top: 18px;}
+.home2 .slider-area .slider-content {margin-top: 72px;}
+.slider-area .slider-1 h1, .slider-area .slider-2 h1 {font-size: 50px;line-height:0;margin: 30px 0;}
+.slider-area .slider-1 div.title2, .slider-area .slider-2 div.title2{padding: 0;}
+.preview-2 .nivo-controlNav{bottom: 20px;}
+.slider-area .slider-2 div.read-more, .slider-area .slider-1 div.read-more{  margin-top: 40px;}
+.slider-area .slider-2 div.read-more a, .slider-area .slider-1 div.read-more a{padding: 13px 30px}
+.home-our-service-area .total-single-service-area {padding: 0;}
+.home-our-service-area .total-single-service-area .single-services-area p {padding: 0 5px;}
+.home-our-service-area .total-single-service-area .single-services-area, .home-our-service-area .total-single-service-area .single-services-area:hover {background: none;}
+.home-page-our-service .services-area .owl-pagination {  margin-top: 0;}
+.home-page-latest-blog .total-blog-content-area .single-blog .details {top: 16%;}
+.footer-top-area .single-footer ul li {font-size: 27px;}
+.footer-bottom-area .footer-bottom-left p {font-size: 12px;}
+.home2 .header-area {padding: 0;}
+.home2 .header-area .main-header-area {margin-top: 10px;}
+.our-service .single-service .media .media-body h4.media-heading a {font-size: 19px;}
+.home-page-team-area .total-team .total-team-area .single-team-area{padding: 0;}
+.contact-us .contact-page-content ul li {margin: 0 0;font-size: 13px;}
+.page-header-area h1 {font-size: 30px;}
+.contact-us .main-contact-form h3 {font-size: 16px;}
+.contact-us .main-contact-form h3::after {top: 30px;}
+.contact-us .main-contact-form fieldset .btn-send {padding: 15px 0;}
+.home-page-our-service .services-area .single-service {text-align: center;}
+.home-page-our-service .services-area .single-service .media .pull-left {display: inline-block !important;float: none !important;
+  margin-right:0px !important;}
+.home-page-our-service .services-area .single-service .media .media-body h4.media-heading a::after {margin: auto;right: 0;text-align: center;}
+.home-page-our-service .services-area { margin-top: 60px;}
+.home-page-banner-area h1 {font-size: 50px;}
+.home-page-store-area .home-page-total-store .home-shop-area ul.nav-tabs::after {left: 35%; width: 42%;}
+.home-page-store-area .home-page-total-store .home-shop-area .tab-content .groom-area .single-groom a img {width: 100%;}
+.home-page-store-area .home-page-total-store .home-shop-area .tab-content .groom-area .single-groom .details {left: 40%;}
+.footer-top-area .single-footer ul li {line-height: 1.5;}
+.blog-page-area .blog-page-content .single-blog .media .media-body h4.media-heading a {font-size: 18px;}
+.blog-page-area .blog-page-content .single-blog .media .media-body .blog-content div.read-more a {padding: 10px 28px;}
+.shop-area .single-shop .social-media-area ul li {margin: 0;}
+.single-product-area .product-image ul li {margin: 0 2px;width: 60px;}
+.add-to-cart-area ul li.box #qty {width: 70px;}
+.related-product-area .single-product-store::after {left: 60%;top: -40px;width: 23%;}
+.related-product-area h3 {font-size: 40px;}
+     .slider-area .slider-1 p::after, .slider-area .slider-2 p::after ,.home-page-banner-area h1::before, .home-page-banner-area h1::after{display:none;}
+.dg-container{height:300px;}
+.blog-page-area .blog-page-content .single-blog .media .pull-left{display: block;float: inherit !important;margin-right: 0;overflow:hidden;position:relative;}
+.portfolio-area2 .single-portfolio2 .overlay-area2 {height: 37%;}
+.portfolio-area3 .single-portfolio3 .overlay-area3 .portfolio-informations3 a {right: 20px;  top: 50px;}
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.nivoSlider{height: auto;}
+.container {width:450px}
+ .mobile-menu-area{display: block;}
+     .header-area{display: none;}    
+	  .header-area .main-menu-area ul li a {padding: 38px 14px;}
+	  .header-area .logo-area {margin-top: 18px;}
+	  .home2 .slider-area .slider-content {margin-top:0px;}
+	  .slider-area .slider-1 h1, .slider-area .slider-2 h1 {font-size: 26px;line-height:1;margin: 0px 0;}
+	  .slider-area .slider-1 div.title2, .slider-area .slider-2 div.title2{display: none;}
+	  .preview-2 .nivo-controlNav{bottom: 20px;}
+	  .slider-area .slider-2 div.read-more, .slider-area .slider-1 div.read-more{  margin-top: 40px;}
+	  .slider-area .slider-2 div.read-more a, .slider-area .slider-1 div.read-more a{padding: 13px 30px}
+	  .home-our-service-area .total-single-service-area {padding: 0;}
+	  .home-our-service-area .total-single-service-area .single-services-area p {padding: 0 5px;}
+	  .home-our-service-area .total-single-service-area .single-services-area, .home-our-service-area .total-single-service-area .single-services-area:hover {background: none;}
+	  .home-page-our-service .services-area .owl-pagination {  margin-top: 0;}
+	  .home-page-latest-blog .total-blog-content-area .single-blog .details {top: 16%;}
+	  .footer-top-area .single-footer ul li {font-size: 27px;}
+	  .footer-bottom-area .footer-bottom-left p {font-size: 12px;text-align: center;}
+	  .home2 .header-area {padding: 0;}
+	  .home2 .header-area .main-header-area {margin-top: 10px;}
+	  .our-service .single-service .media .media-body h4.media-heading a {font-size: 19px;}
+	  .home-page-team-area .total-team .total-team-area .single-team-area{padding: 0;background: none}
+	  .contact-us .contact-page-content ul li {margin: 0 0;font-size: 13px;}
+	  .page-header-area h1 {font-size: 30px;}
+	  .contact-us .main-contact-form h3 {font-size: 16px;}
+	  .contact-us .main-contact-form h3::after {top: 30px;}
+	  .contact-us .main-contact-form fieldset .btn-send {padding: 15px 0;}
+	  .home-page-our-service .services-area .single-service {text-align: center;}
+	  .home-page-our-service .services-area .single-service .media .pull-left {display: inline-block !important;float: none !important;
+	    margin-right:0px !important;}
+	  .home-page-our-service .services-area .single-service .media .media-body h4.media-heading a::after {margin: auto;right: 0;text-align: center;}
+	  .home-page-our-service .services-area { margin-top: 60px;}
+	  .home-page-banner-area h1 {font-size: 32px;}
+	  .home-page-store-area .home-page-total-store .home-shop-area ul.nav-tabs::after {left: 35%; width: 42%;}
+	  .home-page-store-area .home-page-total-store .home-shop-area .tab-content .groom-area .single-groom a img {width: 100%;}
+	  .home-page-store-area .home-page-total-store .home-shop-area .tab-content .groom-area .single-groom .details {left: 40%;}
+	  .footer-top-area .single-footer ul li {line-height: 3;}
+	  .blog-page-area .blog-page-content .single-blog .media .media-body h4.media-heading a {font-size: 18px;}
+	  .blog-page-area .blog-page-content .single-blog .media .media-body .blog-content div.read-more a {padding: 10px 28px;}
+	  .shop-area .single-shop .social-media-area ul li {margin: 0;}
+	  .single-product-area .product-image ul li {margin: 0 2px;width: 60px;}
+	  .add-to-cart-area ul li.box #qty {width: 70px;}
+	  .related-product-area .single-product-store::after {left: 60%;top: -40px;width: 23%;}
+	  .related-product-area h3 {font-size: 40px;}
+	  .slider-area .slider-1 p, .slider-area .slider-2 p {font-size: 15px;letter-spacing: 3px;}
+	  .slider-area .slider-1 p, .slider-area .nivo-directionNav a {top:40%;}
+	  .template-section-area p { padding: 0;}
+	  .home-page-team-area .total-team .total-team-area .single-team-area a img {width: 100%;}
+		.footer-bottom-area .footer-bottom-right ul {margin: 10px;  text-align: center;}
+		.single-services-content, .blog-page-content, .news-page-content-section-area { margin-top: 30px;}
+		.single-services-area .single-services-content h2 { font-size: 25px;}
+		.single-news-page .news-body .informations ul li i { margin-right: 0;}
+		.single-news-page .news-body .informations ul li {margin-right: 6px;}
+		.home-page-team-area .total-team .total-team-area .single-team-area a, .single-services-area .sidebar-area .single-sidebar .shop-advertise-area img { margin-bottom: 30px;}
+		.shop-area {  margin-top: 30px;	}
+		.four-zero-four-area .four-zero-page-area h2 {font-size: 200px;}
+		.four-zero-four-area .four-zero-page-area h3 {font-size: 20px;letter-spacing: 3px;}
+		.about .home-page-about-area .about-us-content h2::after {top: 50px;}		
+	    .footer-bottom-area .footer-bottom-right ul li {margin: 0 8px;}
+	    .our-service .single-service {margin: auto auto 30px;overflow: hidden;  text-align: center;}
+    .our-service .single-service .media .pull-left {display: inline-block;float: none !important;margin-right: 0 !important;}
+    .our-service .single-service .media .media-body h4.media-heading a::after {margin: auto;right: 0;text-align: center;}
+	
+	/*.section-spacing{padding:70px 0}*/
+	.home-page-our-service{padding: 60px 0;}
+	.home-page-banner-area{padding:60px 0;}	
+	.dg-container {height: 345px;}
+	.portfolio-area2 .single-portfolio2{margin: 0}
+	 .home-page-team-area .total-team{margin-top:0}
+	.single-portfolio-four {margin-top: 30px;}
+	.contact-us .contact-page-content{margin-top: 20px;}
+	.home-page-about-area, .home-portfolio-area, .home-page-store-area, .home-page-testimonial-area, .home-page-latest-blog, .footer-top-area, .page-header-area, .home-page-team-area, .our-service, .single-services-area, .portfolio-area, .portfolio-area2, .portfolio-area3, .four-zero-four-area{padding: 30px 0;}
+     .slider-area .slider-1 p::after, .slider-area .slider-2 p::after ,.home-page-banner-area h1::before, .home-page-banner-area h1::after{display:none;}
+     .dg-wrapper a {height: 330px;width: 420px;}
+     .dg-wrapper a.dg-center{min-height:240px;margin:auto;margin-left:0px;}
+     .about-us-feature-image { margin: 30px 0; }
+     .single-services-area .sidebar-area .single-sidebar #custom-search-input .search-query {width:420px;}
+     .blog-page-area .blog-page-content .single-blog .media .pull-left {margin-right: 0;}
+     .portfolio-area .single-portfolio .overlay-area .portfolio-details {padding:0 15px;     }
+     .home-page-about-area .about-us-content h2 {font-size: 48px;}
+     .portfolio-area2 .single-portfolio2 .overlay-area2 .portfolio-informations2 a {top: 20px;}
+     .portfolio-area2 .single-portfolio2 .overlay-area2 {height: 50%;    }
+     .home-page-team-area {       padding: 120px 0 !important;     }
+}
+
+
+ 
+/* small mobile :320px. */
+@media (max-width: 479px) {
+	.nivoSlider{height: auto;}
+	 .container {width:300px}
+     .mobile-menu-area{display: block;}
+     .header-area{display: none;}
+     .header-area .main-menu-area ul li a {padding: 38px 14px;}
+     .header-area .logo-area {margin-top: 18px;}
+     .slider-area .slider-content, .preview-2 .nivo-controlNav {display: none;}
+     .home-our-service-area .total-single-service-area {padding: 0;}
+     .home-our-service-area .total-single-service-area .single-services-area p {padding: 0 5px;}
+     .home-our-service-area .total-single-service-area .single-services-area, .home-our-service-area .total-single-service-area .single-services-area:hover, .home-page-store-area .home-page-total-store .home-shop-area ul.nav-tabs::after {background: none;}
+     .home-page-our-service .services-area .owl-pagination {  margin-top: 0;}
+     .home-page-latest-blog .total-blog-content-area .single-blog .details {top: 16%;}
+     .footer-top-area .single-footer ul li {font-size: 27px;}
+     .footer-bottom-area .footer-bottom-left p {font-size: 12px;text-align: center;}
+     .home2 .header-area {padding: 0;}
+     .home2 .header-area .main-header-area {margin-top: 10px;}
+     .our-service .single-service .media .media-body h4.media-heading a {font-size: 19px;}
+     .home-page-team-area .total-team .total-team-area .single-team-area{padding: 0;background: none}
+     .contact-us .contact-page-content ul li {margin: 0 0;font-size: 13px;}
+     .page-header-area h1 {font-size: 20px;margin-bottom: 15px;}
+     .contact-us .main-contact-form h3 {font-size: 16px;}
+     .contact-us .main-contact-form h3::after {top: 30px;}
+     .contact-us .main-contact-form fieldset .btn-send {padding: 15px 0;}
+     .home-page-our-service .services-area .single-service {text-align: center;}
+     .home-page-our-service .services-area .single-service .media .pull-left {display: inline-block !important;float: none !important;
+       margin-right:0px !important;}
+     .home-page-our-service .services-area .single-service .media .media-body h4.media-heading a::after {margin: auto;right: 0;text-align: center;}
+     .home-page-our-service .services-area { margin-top: 60px;}
+     .home-page-banner-area h1 {font-size: 21px;}
+     .home-page-store-area .home-page-total-store .home-shop-area ul.nav-tabs::after {left: 35%; width: 42%;}
+     .home-page-store-area .home-page-total-store .home-shop-area .tab-content .groom-area .single-groom a img {width: 100%;}
+     .home-page-store-area .home-page-total-store .home-shop-area .tab-content .groom-area .single-groom .details {left: 30%;}
+     .footer-top-area .single-footer ul li {line-height: 3;}
+     .blog-page-area .blog-page-content .single-blog .media .media-body h4.media-heading a {font-size: 18px;}
+     .blog-page-area .blog-page-content .single-blog .media .media-body .blog-content div.read-more a {padding: 10px 28px;}
+     .shop-area .single-shop .social-media-area ul li {margin: 0;}
+     .single-product-area .product-image ul li {margin: 0 2px;width: 60px;}
+     .add-to-cart-area ul li.box #qty {width: 79%;margin-top: 20px;}
+     .related-product-area .single-product-store::after {display: none;}
+     .related-product-area h3 {font-size: 29px;}
+     .slider-area .slider-1 p, .slider-area .slider-2 p {font-size: 15px;letter-spacing: 3px;}
+     .slider-area .slider-1 p, .slider-area .nivo-directionNav a {top: 30px;}
+     .template-section-area p { padding: 0;}
+     .home-page-team-area .total-team .total-team-area .single-team-area a img {width: 100%;}
+	.footer-bottom-area .footer-bottom-right ul {margin: 10px;  text-align: center;}
+	.single-services-content, .blog-page-content, .news-page-content-section-area { margin-top: 30px;}
+	.single-services-area .single-services-content h2 { font-size: 19px;}
+	.single-news-page .news-body .informations ul li i { margin-right: 0;}
+	.single-news-page .news-body .informations ul li {margin-right: 6px;}
+	.home-page-team-area .total-team .total-team-area .single-team-area a, .single-services-area .sidebar-area .single-sidebar .shop-advertise-area img { margin-bottom: 30px;}
+	.shop-area {  margin-top: 30px;	}
+	.four-zero-four-area .four-zero-page-area h2 {font-size: 150px;}
+	.four-zero-four-area .four-zero-page-area h3 {font-size: 20px;letter-spacing: 0px;}
+	.template-section-area h2 {font-size: 36px;margin-bottom: 36px;}
+	.template-section-area h2::after {top: 40px;}
+	.home-page-about-area .about-us-content h2{font-size: 40px}
+	.footer-top-area .single-footer ul li i {margin-right: 10px;}
+	.about .home-page-about-area .about-us-content h2::after {top: 50px;}
+	.footer-bottom-area .footer-bottom-right ul li {margin: 0 8px;}
+    .our-service .single-service {margin: auto auto 30px;overflow: hidden;  text-align: center;}
+    .our-service .single-service .media .pull-left {display: inline-block;float: none !important;margin-right: 0 !important;}
+    .our-service .single-service .media .media-body h4.media-heading a::after {margin: auto;right: 0;text-align: center;}
+    .single-services-area .sidebar-area .single-sidebar h2 {font-size: 19px;margin-bottom: 25px;}
+    .single-services-area .sidebar-area .single-sidebar h2::after {top: 30px;}
+    .pagination-area ul li a {height: 35px;line-height: 35px;width: 35px;}
+	.portfolio-area2 .single-portfolio2 .overlay-area2 .portfolio-informations2 a {height: 25px;line-height: 25px;top: 0;width: 25px;}
+	.add-to-cart-area ul li a {margin-right: 0;}
+	.home-our-service-area .total-single-service-area .single-services-area .service-icon {margin-bottom: 0;}
+	.add-to-cart-area ul li { float: none;text-align: center;}
+	.product-tab-area ul.tablist-area li {display: block;float: none !important;}
+	.product-tab-area ul.tablist-area li a {border-bottom: 1px solid #ddd;}
+	.mean-container .mean-bar {padding:0px 0 10px;}
+	/*.section-spacing{padding:70px 0}*/
+	.home-page-our-service{padding: 60px 0;}
+	.home-page-banner-area{padding:60px 0;}	
+	.dg-container {height: 345px;}
+	.portfolio-area2 .single-portfolio2{margin: 0}
+	 .home-page-team-area .total-team{margin-top:0}
+	.single-portfolio-four {margin-top: 30px;}
+	.contact-us .contact-page-content{margin-top: 20px;}
+	.home-page-about-area, .home-portfolio-area, .home-page-store-area, .home-page-testimonial-area, .home-page-latest-blog, .footer-top-area, .page-header-area, .home-page-team-area, .our-service, .single-services-area, .portfolio-area, .portfolio-area2, .portfolio-area3, .four-zero-four-area{padding: 30px 0;}
+     .slider-area .slider-1 p::after, .slider-area .slider-2 p::after ,.home-page-banner-area h1::before, .home-page-banner-area h1::after{display:none;}
+     .dg-wrapper a {height: 246px;width: 310px;}
+     .dg-wrapper a.dg-center{min-height:240px;margin:auto;margin-left: -20px;}
+     .about-us-feature-image { margin: 30px 0; }
+     .single-services-area .sidebar-area .single-sidebar #custom-search-input .search-query {width: 275px;}
+     .blog-page-area .blog-page-content .single-blog .media .pull-left {margin-right: 0;}
+     .portfolio-area .single-portfolio .overlay-area .portfolio-details {padding: 0 15px;     }
+     .home-page-team-area {       padding: 80px 0 !important;     }
+}

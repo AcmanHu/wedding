@@ -1,0 +1,402 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>About</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- all css here -->
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- jquery-ui.min css -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">        
+        <!-- nivo-slider CSS
+        ============================================ -->          
+        <link rel="stylesheet" href="inc/custom-slider/css/nivo-slider.css">
+        <link rel="stylesheet" href="inc/custom-slider/css/preview.css">
+        <!-- jQuery Carousel Evolution -->
+        <link rel="stylesheet" href="inc/3dslider/css/style.css">
+        <!-- style css -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!--screen-title-->
+        <link rel="stylesheet" href="css/screen-title.css" />
+        <!-- modernizr css -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <style>
+		.fontcolor1 {
+			color: #4ec2bd;
+		}
+		
+		.fontcolor2 {
+			color: #585858;
+		}
+		[v-cloak] {
+			display: none;
+		}
+		
+	</style>
+    <body class="about">
+        <!-- Header Area Start Here -->
+        <header style="box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);background: rgba(0,0,0,0.5);font-size: 18px;">
+           <div class="header-area" style="position: relative;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="logo-area">
+                                <a href="index.html"><img src="img/logo001.png" height="100px" width="100%" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="main-menu-area">
+                                <nav>
+                                    <ul id="nav">
+                                        <li><a href="index.html">首页</a></li> 
+                                        <li><a href="about.html">案例</a>
+                                        	<ul>
+                                                <li><a href="about.html">婚礼案例</a></li>
+                                                <li><a href="case-msg.html">婚纱摄影</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="team.html">团队</a>
+                                        	<ul>
+                                                <li><a href="team.html">化妆师</a></li>
+                                                <li><a href="team.html">主持人</a></li>
+                                                <li><a href="team.html">摄影师</a></li>
+                                                <li><a href="team.html">摄像师</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="flower.html">鲜花预定</a></li>                            
+                                        <li><a href="hotel.html">婚宴酒店</a></li>
+                                        
+                                        <li><a href="contact.html">联系我们</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 hidden-sm hidden-xs text-right">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mobile-menu">
+                      <nav id="dropdown">
+                        <ul>
+                            <li><a href="index.html">首页</a></li> 
+							<li><a href="about.html">案例</a></li>
+							<li><a href="services.html">服务</a>                                            
+								<ul>
+									<li><a href="single-services.html">个人服务</a></li>
+								</ul>
+							</li>                            
+							<li><a href="blog.html">博客</a></li>
+							<li><a href="team.html">团队</a></li>
+							<li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                      </nav>
+                    </div>          
+                  </div>
+                </div>
+              </div>
+            </div>
+        </header>
+        <!-- Header Area End Here -->
+        <!-- Page Header Section Start Here -->
+        <div id="screenConent"  v-cloak>
+			<div id="screenheader" class="screenheader">
+				<div class="screentype">
+					<div class="row screenrow">
+						<div @click="getData" class="col-md-1  screenname">类型</div>
+						<div class="col-md-11 allscreen">
+							<span class="aaa" href="#" :class="{fontcolor1:index==nowIndex1}" @click="changeColor1(index)" v-for="(item,index) in arr1">{{item}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="screenprice">
+					<div class="row screenrow">
+						<div class="col-md-1  screenname">价格</div>
+						<div class="col-md-8 allscreen">
+							<span class="aaa" href="#" :class="{fontcolor1:index==nowIndex2}" @click="changeColor2(index)" v-for="(item,index) in arr2">{{item}}</span>
+						</div>
+						<div class="col-md-3 screenserach">
+							<form class="b-form" action="#" method="post">
+								<input type="text" value=""/>
+								<span>-</span>
+								<input type="text" value=""/>
+								<input class="b-submit" type="button" value="确定"/>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="screenenvironment">
+					<div class="row screenrow">
+						<div class="col-md-1  screenname">环境</div>
+						<div class="col-md-11 allscreen">
+							<span class="aaa" href="#" :class="{fontcolor1:index==nowIndex3}" @click="changeColor3(index)" v-for="(item,index) in arr3">{{item}}</span>
+						</div>
+					</div>
+				</div>
+				<div class="screenmore">
+					<p>收起</p>
+				</div>
+			</div>
+
+			<div class="screendetail">
+				<span :class="{fontcolor1:index==nowIndex4}" @click="changeColor4(index)" v-for="(item,index) in arr4">{{item}}</span>
+			</div>
+			
+			<div class="a-screen">
+				<div class="row" v-for="item in arr5">
+						<div class="col-md-3 a-message" v-for="val in item">
+							<div class="grid a-grid">
+								<!--<a href="images/g1.jpg" class="lsb-preview" data-lsb-group="header">-->
+								<figure class="effect-winston coverage">
+									<img :src="'http://172.17.203.113'+val.image" class="img-responsive" alt=" " />
+								</figure>
+								<!--</a>-->
+							</div>
+							<div class="a-allmsg">
+								<div class="a-name">{{val.name}}<span>￥{{val.price}}</span></div>
+								<div class="a-designer">策划师：{{val.designer}}<span><img src="img/screen/lookeye1.png" />{{val.pageView}}</span></div>
+								<div class="a-address"><img src="img/screen/a-address.png" />{{val.site}}</div>
+							</div>
+							
+						</div>
+				</div>
+			</div>
+			<div class="a-paging">
+				<div class="box" id="box"></div>
+			</div>
+			
+			<div class="a-screen b-screen">
+				<div class="b-recommend">精选推荐</div>
+				<div class="row">
+						<div class="col-md-3 a-message" v-for="val in arr6">
+							<div class="grid a-grid">
+								<!--<a href="images/g1.jpg" class="lsb-preview" data-lsb-group="header">-->
+								<figure class="effect-winston coverage">
+									<img :src="val.img" class="img-responsive" alt=" " />
+								</figure>
+								<!--</a>-->
+							</div>
+							<div class="a-allmsg">
+								<div class="a-name">{{val.name}}<span>￥{{val.price}}</span></div>
+								<div class="a-designer">策划师：{{val.designer}}<span><img src="img/screen/lookeye1.png" /></span></div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+        <!-- Home Page Team End Here -->
+        <!-- Footer Area Start Here -->
+        <footer>
+            
+        </footer>
+        <!-- Footer Area End Here -->
+        <!-- all js here -->
+        <!--vue-->
+        <script type="text/javascript" src="js/vue1.js" ></script>
+        <script type="text/javascript" src="js/vue-resource.js" ></script>
+        <!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- meanmenu js -->
+        <script src="js/jquery.meanmenu.js"></script>
+        <!-- jquery-ui js -->
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- nivo slider js -->
+        <script src="inc/custom-slider/js/jquery.nivo.slider.js"></script>
+        <script src="inc/custom-slider/home.js"></script>
+        <!-- jQuery Carousel Evolution -->
+        <script type="text/javascript" src="inc/3dslider/js/jquery.gallery.js"></script>
+        <script type="text/javascript" src="inc/3dslider/js/modernizr.custom.53451.js"></script>
+        <!-- plugins js -->
+        <script src="js/plugins.js"></script>
+         <!--头部组件-->
+        <!--<script type="text/javascript" src="js/Header.js" ></script>-->
+        <!--尾部组件-->
+        <!--<script type="text/javascript" src="js/Footer.js" ></script>-->
+        <script type="text/javascript" src="js/footer2.js" ></script>
+        <!-- main js -->
+        <script src="js/main.js"></script>
+       	<script>
+       		new Vue({
+				el: '#screenConent',
+				data: {
+					nowIndex1: 0,
+					nowIndex2: 0,
+					nowIndex3: 0,
+					nowIndex4: 0,
+					nowItem1: '不限',
+					nowItem2: '不限',
+					list: [],
+					num1: '',
+					num2: '',
+					arr1: ['不限', '中式', '西式', '森系', '韩式', '唯美', '小清新', '中国风', '简洁', '主题', '大气', '梦幻', '复古'],
+					arr2: ['不限', '5000以下', '5000-10000', '10000-20000', '20000-30000', '30000-50000', '50000-100000', '100000以上'],
+					arr3: ['不限', '户外', '教堂', '草坪', '室内', '沙滩', '海边', '其他'],
+					arr4: ['综合','浏览量','下载'],
+					arr5: [],
+					arr6: [
+						{
+							img:'img/screen/e4.jpg',
+							name:'会呼吸的森系',
+							price:'44444',
+							designer:'小青'
+						},
+						{
+							img:'img/screen/e4.jpg',
+							name:'会呼吸的森系',
+							price:'44444',
+							designer:'小青'
+						},
+						{
+							img:'img/screen/e4.jpg',
+							name:'会呼吸的森系',
+							price:'44444',
+							designer:'小青'
+						},
+						{
+							img:'img/screen/e4.jpg',
+							name:'会呼吸的森系',
+							price:'44444',
+							designer:'小青'
+						}
+					],
+				},
+				
+				methods: {
+					changeColor1(index) {
+						this.nowIndex1 = index;
+						this.nowItem2 = this.arr1[index];
+						this.arr5=[];
+//						alert(this.nowItem1)
+						this.$http.jsonp('http://172.17.203.113/list/getData?length=20&page=0&order=price&desc=&type='+ (this.nowItem2 != '不限' ? this.nowItem2 : '') +'&environment='+ (this.nowItem1 !='不限' ? this.nowItem1 : '') +'&q=&minPrice='+this.num1+'&maxPrice='+this.num2+'',
+						{
+							
+						}).then(function(msg){
+								this.arr5.push(msg.data.results)
+								console.log(this.arr5)							
+						},function(){
+							alert("失败")
+						})
+						console.log(this.num1,this.num2)
+					},
+					changeColor2(index) {
+						this.nowIndex2 = index;
+						this.list = (this.arr2[index].split('-'));
+						if(this.list =='不限'){
+							this.num1 = '';
+							this.num2 = '';
+						}else if(this.list == '5000以下'){
+							this.num1 = '';
+							this.num2 = 5000;
+						}else if(this.list == '100000以上'){
+							this.num1 = 100000;
+							this.num2 = '';
+						}else{
+							this.num1 = this.list[0];
+							this.num2 = this.list[1]; 
+						}
+						console.log(this.num1,this.num2)
+						this.arr5=[];
+//						alert(this.nowItem1)
+						this.$http.jsonp('http://172.17.203.113/list/getData?length=20&page=0&order=price&desc=&type='+ (this.nowItem2 != '不限' ? this.nowItem2 : '') +'&environment='+ (this.nowItem1 !='不限' ? this.nowItem1 : '') +'&q=&minPrice='+this.num1+'&maxPrice='+this.num2+'',
+						{
+							
+						}).then(function(msg){
+								this.arr5.push(msg.data.results)
+								console.log(msg.data)							
+						},function(){
+							alert("失败")
+						})
+					},
+					changeColor3(index) {
+						this.nowIndex3 = index;
+						this.nowItem1 = this.arr3[index];
+					},
+					changeColor4(index) {
+						this.nowIndex4 = index;
+					},
+					getData(){
+						
+					}
+				},
+				computed:{
+				
+				},
+				created(){
+					this.$http.jsonp('http://172.17.203.113/list/getData?length=20&page=0&order=price&desc=&type=&environment=&q=&minPrice=&maxPrice=',
+						{
+							
+						}).then(function(msg){
+								this.arr5.push(msg.data.results)
+								console.log(msg.data)							
+						},function(){
+							alert("失败")
+						})
+						
+				}
+				
+			})
+       		$(function() {
+				changeText();
+				showScreen();
+				$('.screenmore p').click(function() {
+					if($(this).text()=='收起'){
+						$(this).text('展开更多');
+					}else{
+						$(this).text('收起');
+					}
+					$(".screenprice,.screenenvironment").slideToggle("slow");
+				})
+
+				function showScreen() {
+					var screenHeight = $('.screenheader').height();
+					var documentHeight = $(window).height();
+					console.log(screenHeight,documentHeight);
+					if(screenHeight >= documentHeight / 2) {
+						$('.screenprice,.screenenvironment').css('display', 'none');
+					} else {
+						$('.screenprice,.screenenvironment').show();
+					}
+				}
+
+				function changeText() {
+					if($('.screenprice').is(":hidden")) {
+						$('.screenmore p').text('展开更多')
+
+					} else {
+						$('.screenmore p').text('收起')
+					}
+				}
+			})
+       	</script>
+    </body>
+</html>
+

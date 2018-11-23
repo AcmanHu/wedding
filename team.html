@@ -1,0 +1,164 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Team</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- all css here -->
+        <!-- bootstrap v3.3.6 css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- jquery-ui.min css -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <!-- meanmenu css -->
+        <link rel="stylesheet" href="css/meanmenu.min.css">
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <!-- font-awesome css -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">        
+        <!-- nivo-slider CSS
+        ============================================ -->          
+        <link rel="stylesheet" href="inc/custom-slider/css/nivo-slider.css">
+        <link rel="stylesheet" href="inc/custom-slider/css/preview.css">
+        <!-- jQuery Carousel Evolution -->
+        <link rel="stylesheet" href="inc/3dslider/css/style.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- responsive css -->
+        <!--<link rel="stylesheet" href="css/responsive.css">-->
+        
+        <link rel="stylesheet" href="css/footer.css" />
+        <!-- modernizr css -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <style>
+    	[v-cloak] {
+			display: none;
+		}
+    </style>
+    <body class="single-news-page">
+        <!-- Header Area Start Here -->
+        <header>
+            
+        </header>
+        <!-- Header Area End Here -->
+        <!-- Page Header Section Start Here -->
+        <div class="page-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="header-page">
+                            <h1>我们的团队 </h1>
+                            <ul>
+                                <li> <a href="index.html">首页</a> </li>
+                                <li>团队</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header Section End Here -->
+        <!--介绍-->
+        <!-- Home Page Team Start Here -->
+        <div id="home-page-team-area" class="home-page-team-area" v-cloak>
+            <div class="container">
+            	<div class="introduce">
+		        	<h2>他们将给予你最好的服务</h2>
+		        	<p>我们拥有让您满意的超级团队...</p>
+		        </div>
+                <div class="row total-team">
+                	
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center" v-for="item in arr1">
+                        <div class="total-team-area">
+                            <div class="single-team-area">
+                                <a href="case-msg.html"><img :src="item.img" alt=""></a>
+                                <div class="details">
+                                    <a href="case-msg.html">查看详情</a>
+                                </div>
+                            </div>
+                        </div>                            
+                        <div class="team-detals-area">
+                            <h3><a href="case-msg.html">{{item.name}}</a></h3>
+                            <p class="designation">{{item.job}}</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Home Page Team End Here -->
+        <!-- Footer Area Start Here -->
+        <footer>
+            
+        </footer>
+        <!-- Footer Area End Here -->
+        <!-- all js here -->
+        <!--vue.js-->
+        <script type="text/javascript" src="js/vue1.js" ></script>
+        <!-- jquery latest version -->
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- meanmenu js -->
+        <script src="js/jquery.meanmenu.js"></script>
+        <!-- jquery-ui js -->
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- nivo slider js -->
+        <script src="inc/custom-slider/js/jquery.nivo.slider.js"></script>
+        <script src="inc/custom-slider/home.js"></script>
+        <!-- jQuery Carousel Evolution -->
+        <script type="text/javascript" src="inc/3dslider/js/jquery.gallery.js"></script>
+        <script type="text/javascript" src="inc/3dslider/js/modernizr.custom.53451.js"></script>
+        <!-- plugins js -->
+        <script src="js/plugins.js"></script>
+        <!--头部组件-->
+        <script type="text/javascript" src="js/Header.js" ></script>
+        <!--尾部组件-->
+        <script type="text/javascript" src="js/Footer2.js" ></script>
+        <!-- main js -->
+        <script src="js/main.js"></script>
+        <script>
+        	new Vue({
+        		el:"#home-page-team-area",
+        		data:{
+        			arr1:[
+        				{
+        					img:'img/team/1.png',
+        					name:'化妆师',
+        					job:'XXX'
+        				},
+        				{
+        					img:'img/team/2.png',
+        					name:'主持人',
+        					job:'XXX'
+        				},
+        				{
+        					img:'img/team/3.png',
+        					name:'摄影师',
+        					job:'XXX'
+        				},
+        				{
+        					img:'img/team/3.png',
+        					name:'摄像师',
+        					job:'XXX'
+        				},
+        			],
+        		}
+        		
+        	})
+        </script>
+    </body>
+</html>
+

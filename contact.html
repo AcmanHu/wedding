@@ -1,0 +1,299 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Contact</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="icon" type="image/png" href="img/favicon.png">
+		<!-- Place favicon.ico in the root directory -->
+
+		<!-- all css here -->
+		<!-- bootstrap v3.3.6 css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- animate css -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- jquery-ui.min css -->
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<!-- meanmenu css -->
+		<link rel="stylesheet" href="css/meanmenu.min.css">
+		<!-- owl.carousel css -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- font-awesome css -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- nivo-slider CSS
+        ============================================ -->
+		<link rel="stylesheet" href="inc/custom-slider/css/nivo-slider.css">
+		<link rel="stylesheet" href="inc/custom-slider/css/preview.css">
+		<!-- jQuery Carousel Evolution -->
+		<link rel="stylesheet" href="inc/3dslider/css/style.css">
+		<!-- style css -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/contact.css" />
+		<!-- responsive css -->
+		<!--<link rel="stylesheet" href="css/responsive.css">-->
+		<!-- modernizr css -->
+		<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src="http://api.map.baidu.com/api?v=2.0&ak=KSBxD1PINGdHYOvSmZBeTAFLpfhrqL75"></script>
+	</head>
+	
+	<body class="single-team-page-area">
+
+		<!-- Header Area Start Here -->
+		<header>
+
+		</header>
+		<!-- Header Area End Here -->
+		<!-- Page Header Section Start Here -->
+
+		<div class="page-header-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="header-page">
+							<h1>关于我们</h1>
+							<ul>
+								<li>
+									<a href="index.html">首页</a>
+								</li>
+								<li>联系我们</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Page Header Section End Here -->
+		<!-- Contact Us Page Start Here -->
+		<div class="contact-us">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-md-3 col-sm-3 col-xs-12" style="float: left;">
+						<div class="main-contact-form">
+							<h3>寄给我们消息</h3>
+							<form method="post" action="php/contact.php" name="cform" id="cform">
+								<fieldset>
+									<div class="col-sm-12 acurate">
+										<div class="form-group">
+											<input type="text" name="name" class="form-control" placeholder="姓名*">
+										</div>
+									</div>
+									<div class="col-sm-12 acurate">
+										<div class="form-group">
+											<input type="email" name="email" class="form-control" placeholder="邮件*">
+										</div>
+									</div>
+									<div class="col-sm-12 acurate">
+										<div class="form-group">
+											<input type="phone" name="subject" class="form-control" placeholder="电话*">
+										</div>
+									</div>
+									<div class="col-sm-12 acurate">
+										<div class="form-group">
+											<textarea cols="40" name="comments" rows="10" class="textarea form-control" placeholder="写出你的内容"></textarea>
+										</div>
+									</div>
+									<div class="col-sm-12 acurate">
+										<div class="form-group">
+											<button class="btn-send" type="submit" id="submit">发送消息</button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div id="response_message"></div>
+					</div>
+					<div class="c-contact" style="float: left;">
+						<div class="c-contact-page-content">
+							<h3>位置</h3>
+						</div>
+						<div id="container3" class="container fl"></div>
+						<ul class="list fl">
+							<li v-for="(item,contact) in arr1" @click="changeMsg(contact)" :class="{boderColor:contact==nowContact}">
+								<div class="address">
+									<a>电子校分店</a>
+								</div>
+								<img class="pic" src="img/blog/2.jpg" />
+								<!--<a href="javascript:void(0)">
+										地点1:重庆电子工程职业学院
+									</a>-->
+							</li>
+							<li>
+								<div class="address1">
+									<a>房院分店</a>
+								</div>
+								<img class="pic1" src="img/blog/2.jpg" />
+								<!--<a href="javascript:void(0)">
+										地点2:重庆房地产学院
+									</a>-->
+							</li>
+							<li>
+								<div class="address2">
+									<a>警察学院分店</a>
+								</div>
+								<img class="pic2" src="img/blog/2.jpg" />
+								<!--<a href="javascript:void(0)">
+										地点3:重庆警察学院
+									</a>
+								</div>-->
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Contact Us Page End Here -->
+		<!-- Footer Area Start Here -->
+		<footer>
+
+		</footer>
+		<!-- Footer Area End Here -->
+		<!-- all js here -->
+		<!--vue.js-->
+		<script type="text/javascript" src="js/vue1.js"></script>
+		<!-- jquery latest version -->
+		<script src="js/vendor/jquery-1.12.0.min.js"></script>
+		<!-- bootstrap js -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- owl.carousel js -->
+		<!-- meanmenu js -->
+		<script src="js/jquery.meanmenu.js"></script>
+		<!-- jquery-ui js -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- wow js -->
+		<script src="js/wow.min.js"></script>
+
+		<script src="js/jquery.baiduMap.min.js"></script>
+		<!-- nivo slider js -->
+		<script src="inc/custom-slider/js/jquery.nivo.slider.js"></script>
+		<script src="inc/custom-slider/home.js"></script>
+		<!-- jQuery Carousel Evolution -->
+		<script type="text/javascript" src="inc/3dslider/js/jquery.gallery.js"></script>
+		<script type="text/javascript" src="inc/3dslider/js/modernizr.custom.53451.js"></script>
+
+		<!-- plugins js -->
+		<script src="js/plugins.js"></script>
+		<!--尾部组件-->
+		<script type="text/javascript" src="js/footer2.js"></script>
+		<!--头部组件-->
+		<script type="text/javascript" src="js/Header.js"></script>
+		<!-- main js -->
+		<script src="js/main.js"></script>
+
+		<script>
+			$(document).ready(function(e) {
+				$("#submit").on("click", function(ex) {
+					//e.preventDefauilt();
+					$.ajax({
+						url: "php/contact.php",
+						type: "post",
+						data: $("#cform").serialize(),
+						success: function(response) {
+							$("#response_message").html(response);
+
+						},
+						error: function(jqXHR, textStatus, errorThrown) {
+							alert("Some error occured please try later");
+						}
+
+					});
+					ex.preventDefault();
+				});
+			});
+
+			var points = [{
+				id: 1,
+				lng: 106.3308381,
+				lat: 29.624113,
+				title: "重庆电子工程职业学院",
+				content: ["地址：重庆电子工程职业学院", "电话：010-62881144"]
+			}, {
+				id: 2,
+				lng: 106.335015,
+				lat: 29.62361,
+				title: "重庆房地产学院",
+				content: ["地址：重庆房地产学院", "电话：010-69768087"]
+			}, {
+				id: 3,
+				lng: 106.323318,
+				lat: 29.634822,
+				title: "重庆警察学院",
+				content: ["地址：重庆警察学院", "电话：010-65131892"]
+			}];
+			var map = new BaiduMap({
+				id: "container3",
+				level: 16, //  选填--地图级别--(默认15)
+				zoom: true, // 选填--是否启用鼠标滚轮缩放功能--(默认false)
+				type: ["地图", "卫星", "三维"], // 选填--显示地图类型--(默认不显示)
+				width: 320, // 选填--信息窗口width--(默认自动调整)
+				//				height: 70, // 选填--信息窗口height--(默认自动调整)
+				titleClass: "title",
+				contentClass: "content",
+				showPanorama: true, // 是否显示全景控件(默认false)
+				showMarkPanorama: true, // 是否显示标注点全景图(默认false)
+				showLabel: false, // 是否显示文本标注(默认false)
+				mapStyle: "normal", // 默认normal,可选dark,light
+				icon: { // 选填--自定义icon图标
+					url: "img/marker2.png",
+					width: 34,
+					height: 94
+				},
+				centerPoint: { // 中心点经纬度106.337036,29.630569
+					lng: 106.3370369,
+					lat: 29.630569
+				},
+				index: 0, // 开启对应的信息窗口，默认-1不开启
+				animate: true, // 是否开启坠落动画，默认false
+				points: points, // 标注点--id(唯一标识)
+				callback: function(id) {
+					$(".list").find("li").eq(id - 1).addClass("active").siblings().removeClass("active");
+				}
+			});
+
+			var data = map.getPosition();
+			var $li = $(".list").find("li");
+
+			$li.each(function(i) {
+				$(this).data("id", i + 1);
+			}).on("click", function() {
+				map.openInfoWindow($(this).data("id"));
+				$(this).addClass("active").siblings().removeClass("active");
+			}).eq(data.id - 1).addClass("active");
+		</script>
+
+		<script>
+			$(".address").on("click", function() {
+				$(".address").css("background-color", "#bebebe");
+				$(".address1").css("background-color", "#e0e0e0");
+				$(".address2").css("background-color", "#e0e0e0");
+				$(".pic").slideToggle();
+				$(".pic1").hide();
+				$(".pic2").hide();
+			});
+			$(".address1").on("click", function() {
+				$(".address1").css("background-color", "#bebebe");
+				$(".address").css("background-color", "#e0e0e0");
+				$(".address2").css("background-color", "#e0e0e0");
+				$(".pic1").slideToggle();
+				$(".pic").hide();
+				$(".pic2").hide();
+
+			});
+			$(".address2").on("click", function() {
+				$(".address2").css("background-color", "#bebebe");
+				$(".address").css("background-color", "#e0e0e0");
+				$(".address1").css("background-color", "#e0e0e0");
+				$(".pic2").slideToggle();
+				$(".pic").hide();
+				$(".pic1").hide();
+			});
+
+		</script>
+
+	</body>
+
+</html>
